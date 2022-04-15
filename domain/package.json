@@ -1,8 +1,8 @@
 {
-  "name": "domain",
+  "name": "simple_math_ij",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "simpleMath.js",
   "scripts": {
     "test": "jest --watchAll"
   }
