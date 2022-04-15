@@ -1,28 +1,16 @@
 import "./App.css";
 import { useState } from "react";
+import simpleMath from "ldg-simple-math-mo";
 
 function App() {
   const [display, setDisplay] = useState([]);
 
   function displayValues(a, b) {
-    function add() {
-      return Number(a) + Number(b);
-    }
-    function substract() {
-      return Number(a) - Number(b);
-    }
-    function multiply() {
-      return Number(a) * Number(b);
-    }
-    function divide() {
-      return Number(a) / Number(b);
-    }
-
     return [
-      `${a} + ${b} = ${add(a, b)}`,
-      `${a} - ${b} = ${substract(a, b)}`,
-      `${a} * ${b} = ${multiply(a, b)}`,
-      `${a} / ${b} = ${divide(a, b)}`,
+      `${a} + ${b} = ${simpleMath.add(a, b)}`,
+      `${a} - ${b} = ${simpleMath.substract(a, b)}`,
+      `${a} * ${b} = ${simpleMath.multiply(a, b)}`,
+      `${a} / ${b} = ${simpleMath.divide(a, b)}`,
     ];
   }
 
